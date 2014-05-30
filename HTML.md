@@ -2,13 +2,13 @@ HTML 编码规范
 =============
 此为前端开发团队遵循和约定的**HTML 编码规范**，意在提高代码的规范性和可维护性。
 
-## 说明
+### 说明
 
 文档中使用的关键字「MUST」,「MUST NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」在[RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt)中有说明。
 
 > 还未定稿，对规范中有不赞同的欢迎[提出issues](https://github.com/yutouxiuxiu/code-style/issues/new)(请添加 `HTML` 标签)讨论。
 
-## 规则
+### 规则
 
 * 新起一行的标签，或者在一行内写不下的内容「MUST」和父标签保持一次缩进。
 
@@ -194,4 +194,10 @@ HTML 编码规范
     <select>
         <option value="1" selected>1</option>
     </select>
+    ```
+* 「SHOULD NOT」使用 HTML 注释，仅可添加少量 HTML 注释标注文档大致结构，以便在浏览器中调试页面时使用。细节注释请参考 Smarty规范
+    
+    ```html
+    // bad
+    <!-- 用于放置页面底部的隐藏统计控件 -->
     ```
