@@ -6,7 +6,7 @@ HTML 编码规范
 
 文档中使用的关键字「MUST」,「MUST NOT」,「SHOULD」,「SHOULD NOT」,「RECOMMENDED」,「MAY」在[RFC2119](http://oss.org.cn/man/develop/rfc/RFC2119.txt)中有说明。
 
-> 还未定稿，对规范中有不赞同的欢迎[提出issues](https://github.com/yutouxiuxiu/code-style/issues/new)(请添加 `HTML` 标签)讨论。
+> 还未定稿，对规范中有不赞同的欢迎[提出issues](https://github.com/yutouxiuxiu/code-style/issues/new) (请添加 `HTML` 标签) 讨论。
 
 ### 规则
 
@@ -77,7 +77,7 @@ HTML 编码规范
     <img src="spreadsheet.png" alt="Spreadsheet screenshot.">
     ```
 
-* 「SHOULD」将 HTML 中的内容(html)、表现(css)和行为(javascript)分离，HTML 标签只「SHOULD」用于定义内容。
+* 「SHOULD」将 HTML 中的内容 (html)、表现 (css) 和行为 (javascript) 分离，HTML 标签只「SHOULD」用于定义内容。
 
     ```html
     // bad
@@ -103,7 +103,7 @@ HTML 编码规范
     <p>It’s awesome!
     ```
 
-* 「SHOULD」省略样式标签(link/style)和脚本标签(script)中的type属性。
+* 「SHOULD」省略样式标签 (link/style) 和脚本标签 (script) 中的type属性。
 
     ```html
     // bad
@@ -112,14 +112,16 @@ HTML 编码规范
     <script src="//www.google.com/js/gweb/analytics/autotrack.js"
     type="text/javascript"></script>
     <style type="text/css">
-        .author{}
+        .author {
+        }
     </style>
     
     // good
     <link rel="stylesheet" href="//www.google.com/css/maia.css">
     <script src="//www.google.com/js/gweb/analytics/autotrack.js"></script>
     <style>
-        .author{}
+        .author {
+        }
     </style>
     ```
 
@@ -140,13 +142,13 @@ HTML 编码规范
     <img src="spreadsheet.png" alt="Spreadsheet screenshot.">
     ```
 
-* 应该「SHOULD」启用 IE Edge 模式。
+* 「SHOULD」启用 IE Edge 模式。
 
     ```html
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     ```
 
-* HTML 文件编码以及 `meta` 标签编码应该「SHOULD」统一为 `UTF-8`，文件内容编码为 UTF-8（无 BOM）。
+* HTML 文件编码以及 `meta` 标签编码「SHOULD」统一为 `UTF-8`，文件内容编码为 UTF-8（无 BOM）。
 
     ```html
     <meta charset="UTF-8">
